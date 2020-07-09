@@ -1,3 +1,4 @@
+extern crate glib_sys;
 mod purple;
 
 pub use purple::*;

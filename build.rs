@@ -11,6 +11,7 @@ fn main() {
         .whitelist_type("Purple.*")
         .whitelist_function("purple_.*")
         .whitelist_var("PURPLE_.*")
+        .blacklist_type("_?GList")
         .bitfield_enum("PurpleIconScaleRules|PurpleProtocolOptions|")
         .newtype_enum("PurplePluginType");
 

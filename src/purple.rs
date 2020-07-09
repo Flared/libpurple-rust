@@ -5,4 +5,7 @@
     non_upper_case_globals,
     clippy::all
 )]
+
+use glib_sys::GList;
+
 include!(concat!(env!("OUT_DIR"), "/purple.rs"));

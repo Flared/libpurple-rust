@@ -12,8 +12,13 @@ authors = ["石博文 <sbw@sbw.so>"]
 build = "build.rs"
 links = "purple"
 
+[dependencies]
+glib-sys = "0.10.0"
+
 [build-dependencies]
 pkg-config = "~0.3"
 libc = "~0.2"
 bindgen = "~0.54"
+
+
 
