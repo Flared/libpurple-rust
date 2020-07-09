@@ -13,7 +13,7 @@ build = "build.rs"
 links = "purple"
 
 [dependencies]
-glib-sys = "0.10.0"
+glib-sys = "*"
 
 [build-dependencies]
 pkg-config = "~0.3"
