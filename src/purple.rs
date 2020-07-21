@@ -6,6 +6,6 @@
     clippy::all
 )]
 
-use glib_sys::GList;
+use glib_sys::{GHashTable, GList};
 
 include!(concat!(env!("OUT_DIR"), "/purple.rs"));
