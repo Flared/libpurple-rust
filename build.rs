@@ -9,7 +9,7 @@ fn main() {
     let out_file = Path::new(&out_dir).join("purple.rs");
     let mut bindings = bindgen::builder()
         .whitelist_type("Purple.*|proto_chat_entry")
-        .whitelist_function("purple_.*")
+        .whitelist_function("purple_.*|serv_.*")
         .whitelist_var("PURPLE_.*")
         .blacklist_type("_?(GList|GHashTable)")
         .bitfield_enum("PurpleIconScaleRules|PurpleProtocolOptions|")
