@@ -1,24 +1,22 @@
 [package]
-name = "purple-sys"
-description = "libpurple rust binding"
-documentation = "https://github.com/sbwtw/libpurple-rust"
-homepage = "https://github.com/sbwtw/libpurple-rust"
-repository = "https://github.com/sbwtw/libpurple-rust"
+name = "purple-sys-flared"
+description = "Maintained fork of libpurple rust binding"
+repository = "https://github.com/Flared/libpurple-rust"
 keywords = ["purple", "libpurple"]
 categories = ["api-bindings"]
 license = "WTFPL"
-version = "0.0.6"
-authors = ["石博文 <sbw@sbw.so>"]
+version = "0.0.7"
+authors = ["石博文 <sbw@sbw.so>", "isra17 <isra017@gmail.com>"]
 build = "build.rs"
 links = "purple"
 
 [dependencies]
-glib-sys = "*"
+glib-sys = "^0"
 
 [build-dependencies]
-pkg-config = "*"
-libc = "*"
-bindgen = "*"
+pkg-config = "^0"
+libc = "^0"
+bindgen = "^0"
 
 
 

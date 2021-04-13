@@ -13,7 +13,8 @@ fn main() {
         .allowlist_var("PURPLE_.*")
         .blocklist_type("_?(GList|GHashTable)")
         .bitfield_enum("PurpleIconScaleRules|PurpleProtocolOptions|")
-        .newtype_enum("PurplePluginType");
+        .newtype_enum("PurplePluginType")
+        .derive_debug(true);
 
     let purple_lib = pkg_config::probe_library("purple").unwrap();
 
