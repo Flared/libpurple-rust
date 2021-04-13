@@ -8,10 +8,10 @@ fn main() {
     let out_dir = env::var("OUT_DIR").unwrap();
     let out_file = Path::new(&out_dir).join("purple.rs");
     let mut bindings = bindgen::builder()
-        .whitelist_type("Purple.*|proto_chat_entry")
-        .whitelist_function("purple_.*|serv_.*")
-        .whitelist_var("PURPLE_.*")
-        .blacklist_type("_?(GList|GHashTable)")
+        .allowlist_type("Purple.*|proto_chat_entry")
+        .allowlist_function("purple_.*|serv_.*")
+        .allowlist_var("PURPLE_.*")
+        .blocklist_type("_?(GList|GHashTable)")
         .bitfield_enum("PurpleIconScaleRules|PurpleProtocolOptions|")
         .newtype_enum("PurplePluginType");
 

@@ -16,9 +16,9 @@ links = "purple"
 glib-sys = "*"
 
 [build-dependencies]
-pkg-config = "~0.3"
-libc = "~0.2"
-bindgen = "~0.54"
+pkg-config = "*"
+libc = "*"
+bindgen = "*"
 
 
 
